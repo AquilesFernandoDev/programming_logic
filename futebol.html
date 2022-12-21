@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<script>
+
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+let nome = prompt("Digite seu nome");
+
+
+let pontosAnopassado = parseInt(prompt(nome + " , digite os pontos que seu time alcançou no ano passado"))
+
+let vitorias = parseInt(prompt( nome + ", entre com o número de vitórias do seu time."));
+
+
+let empates = parseInt(prompt(nome + ", entre com o número de empates do seu time."));
+
+
+let pontos = vitorias * 3 + empates;
+
+
+
+mostra ("A pontuação do seu time esse ano foi de " + pontos + ".");
+
+mostra("Os pontos alcançados do ano anterior foram " + pontosAnopassado + ".")
+
+if (pontos > pontosAnopassado){
+
+mostra("Seu time esta melhor do que o ano passado.");
+mostra("Time top, parabéns!!")
+}
+
+if (pontos < pontosAnopassado){
+
+mostra("Seu time está pior do que e o ano passado.");
+
+mostra("Time horrivel.")
+}
+
+if (pontos  == pontosAnopassado){
+mostra("Seu time está igual ao ano passado.")
+
+mostra("Não jogou nada ksksksks")
+
+}
+
+</script>
