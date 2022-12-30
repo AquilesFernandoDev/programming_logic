@@ -19,19 +19,27 @@ function sorteia(n){
    return Math.round( Math.random() * n);
 } 
 
-let numeroPensado =  sorteia(100);
+let numeroPensado = sorteia(100);
+let tentativas = 1;
 
+while ( tentativas <= 3 ){
 
-let chute = parseInt(prompt("Digite seu chute!"));
+        let chute = parseInt(prompt("Digite seu chute!"));
+        
 
-if(chute == numeroPensado){
+        if(chute == numeroPensado){
 
-    mostra("Você acertou!");
+            mostra("Você acertou!");
+            break;
+        }
+        else{
+
+            mostra("Você errou! ");
+            
+        }
+
+        tentativas++
 }
-else{
 
-    mostra("Você errou, o número pensado foi " + numeroPensado);
-    
-}
-
+mostra("FIM")
 </script>
